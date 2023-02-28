@@ -1,0 +1,149 @@
+body{
+    font-family: var(--text1);
+    color: var(--text-color);
+    background-image: url("../images/background-movies-series.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0e0431;
+}
+
+header{
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    position: fixed;
+}
+
+header>img{
+    width: 10rem;
+}
+
+header>div{
+    display: flex;
+    gap: 2rem;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+header>div>a{
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+main{
+    width: 99.5vw;
+    height: 728px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--card-bg-color);
+}
+
+section>div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.acount{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+
+}
+
+.acount>input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    background-color: var(--form-bg-color);
+    color: var(--text-color);
+    font-size: large;
+}
+
+.click{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.click>button{
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #522e81 0%, #2b0b5f 100%);
+}
+
+.click>span{
+    color: var(--link-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 99.5vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+footer>nav{
+    display: flex;
+    gap: 40px;
+    letter-spacing: 1px;
+}
+
+footer>p{
+    font-family: "Quicksand";
+    font-size: 11px;
+}
+
+footer>div{
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+}

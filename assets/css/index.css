@@ -1,0 +1,369 @@
+body{
+    font-family: var(--text1);
+    color: var(--text-color);
+    background-color: #0e0431;
+}
+
+header{
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    position: fixed;
+}
+
+header>img{
+    width: 10rem;
+}
+
+header>div{
+    display: flex;
+    gap: 2rem;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+header>div>a{
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+header>div>a>button{
+    font-family: var(--text2);
+    color: var(--text-color);
+    background-color: var(--tertiary-color);
+    width: 160px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: 1s;
+}
+
+header>div>a>button:hover{
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+    cursor: pointer;
+}
+
+main>.first{
+    width: 99.5vw;
+    height: 940px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-image: var(--divider-bg-color);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    box-shadow: inset 0px -45px 100px 22px rgb(10, 5, 48);
+}
+
+main>.first>div{
+    width: 800px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.logos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+h1{
+    width: 550px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1> strong{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+hr{
+    width: 700px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, rgb(69, 9, 148), rgb(204, 53, 179));
+    border-image-slice: 1;
+}
+
+h4{
+    text-align: center;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+h4>strong{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.signIt{
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--text-color);
+    background: linear-gradient(90deg, #590f68 0%, #3b0a8a 100%);
+    transition: .5s;
+    animation: wiggle 2.2s linear infinite;
+}
+
+main>section>div>p{
+    width: 250px;
+    text-align: center;
+}
+
+main>#join{
+    background-image: url('../images/background-movies-series.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 99.5vw;
+    height: 940px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#join>div{
+    display: flex;
+    gap: 80px;
+}
+
+#join>h2{
+    text-align: center;
+    width: 1200px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card{
+    width: 540px;
+    height: 600px;
+    background-image: var(--card-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card__head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__head>h6{
+    padding: 40px;
+    padding-left: 70px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.card__head>h6>strong{
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.card__texts{
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 5px;
+}
+
+.card__texts>p{
+    font-size: 20px;
+}
+
+.card__texts>p>strong{
+    font-size: 30px;
+
+}
+
+.card__button{
+    margin-top: 100px;
+    border: none;
+    border-radius: 30px;
+    width: 450px;
+    height: 70px;
+    font-weight: 700;
+    color: var(--text-color);
+    background: linear-gradient(90deg, #590f68 0%, #3b0a8a 100%);
+    letter-spacing: 3px;
+}
+
+.container{
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.container:has(.card:nth-child(2):hover)
+  .card:nth-child(1) {
+  transform: rotateY(45deg);
+}
+
+.container:has(.card:nth-child(1):hover)
+  .card:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.end{
+    width: 99.5vw;
+    height: 940px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;  
+    margin-bottom: 400px;
+    transition: transform 1s ease-in-out;
+}
+
+.end>h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.end>div{
+    width: 1250px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.cardsStars>div{
+    width: 380px;
+    height:570px;
+}
+
+.hbo{
+    background-image:url("../images/hbo-default_0.webp") ;
+    background-size: cover
+}
+
+.max{
+    background-image:url("../images/MAX-Default.webp") ;
+    background-size: cover
+}
+
+.dc{
+    background-image:url("../images/DC_Default.webp") ;
+    background-size: cover
+}
+
+.wb{
+    background-image:url("../images/WB-Default.webp") ;
+    background-size: cover
+}
+
+.cn{
+    background-image:url("../images/CN-Default.webp") ;
+    background-size: cover
+}
+
+.ucl{
+    background-image:url("../images/UCL-Default.webp") ;
+    background-size: cover
+}
+
+.hbo:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 2s;
+    background-image: url("../images/hbo-hover_0.webp");
+    background-size: cover;
+}
+
+.max:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 2s;
+    background-image: url("../images/MAX-Hover.webp");
+    background-size: cover;
+}
+
+.dc:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 2s;
+    background-image: url("../images/DC-Hover.webp");
+    background-size: cover;
+}
+
+.wb:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 2s;
+    background-image: url("../images/WB-Hover.webp");
+    background-size: cover;
+}
+
+.cn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 2s;
+    background-image: url("../images/CN-Hover.png");
+    background-size: cover;
+}
+
+.ucl:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 2s;
+    background-image: url("../images/UCL-Hover.webp");
+    background-size: cover;
+}
+
+
+footer{
+    width: 99.5vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+footer>nav{
+    display: flex;
+    gap: 40px;
+    letter-spacing: 1px;
+}
+
+footer>p{
+    font-family: "Quicksand";
+    font-size: 11px;
+}
+
+footer>div{
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+}
